@@ -6,6 +6,7 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
+    dark: true,
     options: {
       customProperties: true
     },
@@ -23,6 +24,6 @@ export default new Vuetify({
   },
   lang: {
     locales: { zhHans },
-    current: "zh-Hans"
+    current: "zhHans"
   }
 });

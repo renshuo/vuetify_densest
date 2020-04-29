@@ -1,0 +1,124 @@
+/* bars */
+.v-toolbar, .v-toolbar__content {
+    height: 30px !important;
+}
+.v-content {
+    padding: 30px 0px 0px !important;
+}
+
+/*compression tree-view height */
+.v-treeview .v-treeview-node__root {
+    min-height: 20px;
+}
+.v-slider--horizontal {
+    min-height: 20px;
+}
+
+.v-input {
+    margin: 0;
+    padding-top: 0;
+}
+.v-input__slot {
+    margin-bottom : 0 !important;
+    border-top: 0;
+    border-bottom: 0;
+}
+.v-overflow-btn .v-input__slot {
+    border-style: none;
+}
+.v-overflow-btn .v-input__append-inner {
+    height: 0px;
+}
+
+.v-radio {
+    margin-bottom: 0px !important;
+}
+
+.v-messages {
+    min-height: 10px;
+}
+
+.v-text-field__details {
+    min-height: 0px;
+}
+
+.v-list {
+    padding: 0;
+}
+
+.v-list-item {
+    min-height: 28px !important;
+}
+
+.v-list-item__content {
+    padding: 0 !important;
+}
+
+
+/* for table */
+
+.v-data-footer .v-btn--icon {
+    height: 24px;
+    width: 24px;
+}
+
+.v-data-footer .v-data-footer__pagination {
+    margin: 0 12px 0 8px;
+}
+
+.v-data-footer .v-data-footer__select .v-select {
+    margin: 0 0 0 12px;
+}
+
+/* for picker */
+.v-picker__title {
+    padding: 0;
+}
+.v-date-picker-title__year {
+    margin-bottom: -14px !important;
+}
+
+.v-date-picker-title__date {
+    font-size: 24px;
+    text-align: center !important;
+    margin-top: 2px;
+}
+.v-date-picker-header {
+    padding: 0px 16px;
+}
+
+.v-date-picker-table--date .v-btn, .v-date-picker-header .v-btn {
+    height: 34px;
+    width: 34px;
+}
+.v-date-picker-table--date th {
+    padding: 1px;
+}
+.v-date-picker-header__value button {
+    padding: 2px;
+}
+
+/* time picker */
+.v-time-picker-title__time .v-picker__title__btn, .v-time-picker-title__time span {
+    height: 30px;
+    font-size: 30px;
+}
+
+.v-time-picker-title {
+    justify-content: center;
+}
+
+.v-time-picker-clock__ampm {
+    padding: 0 0 0 15px;
+    width: 240px;
+    height: 240px;
+}
+.v-time-picker-clock__container {
+    transform: scale(1);
+}
+
+.theme--dark.v-picker__body {
+    width: 260px !important;
+    height: 240px !important;
+}
+

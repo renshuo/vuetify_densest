@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to bottom , #000050, #0055ff);
+    /* background: url('../assets/background.jpg') ; */
+    /* background-size: 1920px 1000px; */
+}
+
+.theme--dark.v-application,
+.theme--dark.v-navigation-drawer,
+.theme--dark.v-app-bar.v-toolbar.v-sheet,
+.theme--dark.v-toolbar.v-sheet,
+.theme--dark.v-data-table,
+.theme--dark.v-btn,
+.theme--dark.v-card,
+.theme--dark.v-list,
+.theme--dark.v-footer,
+.theme--dark.v-sheet,
+.theme--dark.v-btn-toggle:not(.v-btn-toggle--group)
+ {
+    border: 1px outset rgba(100,160,255,1);
+    background: rgba(0,0,0,0.0)
+}
+
+/* dialog background */
+.v-dialog:not(.v-dialog--fullscreen) {
+    /* background-color: rgba(0,0,130,0.8); */
+    border: 1px outset rgba(100,160,255,1);
+    background: linear-gradient(to bottom , rgba(0,0,80, 0.8), rgba(0, 85, 255, 0.6));
+}
+
+.theme--dark.v-timeline .v-timeline-item__dot {
+    background: transparent
+}
+
+/* 表格行的 hover颜色 */
+.theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: rgba(31,127,217, 0.8)
+}
+
+/* 表格行内button */
+.theme--dark.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+    background: transparent
+}
+
+/* 表格扩展区 */
+.theme--dark.v-expansion-panels .v-expansion-panel {
+    border: 1px outset rgba(100,160,255,1);
+    background: transparent
+}
+/* table.selected */
+.theme--dark.v-data-table tbody tr.v-data-table__selected {
+    background: rgba(31,127,217, 0.5)
+}
+
+/* DateTimePicker */
+.dtp-action,.theme--dark.v-picker--date, .theme--dark.v-picker--time,
+.v-time-picker-clock__container, .v-date-picker-header, .v-date-picker-table,
+.theme--dark.v-time-picker-clock{
+    background: rgba(13,71,161, 1) 
+}
+
+/* drawer */
+.theme--dark.v-navigation-drawer:hover{
+    background: rgba(0,0,80,0.9);
+}
+/* drawer item hover */
+.theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled):hover {
+    background: rgba(13, 71, 161, 1);
+}
+
+/* all popup menu */
+.v-menu__content {
+    background: rgba(0,0,80,0.9);
+}
+
