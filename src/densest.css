@@ -1,18 +1,135 @@
-/* bars */
-.v-toolbar, .v-toolbar__content {
-    height: 30px !important;
+.v-application {
+    line-height: 1;
 }
+
+/* bars */
+
+.v-toolbar{
+    height: 32px !important;
+}
+.v-toolbar__content {
+    height: 30px !important;
+    padding: 1px;
+}
+
+.v-app-bar__nav-icon {
+    height: 28px !important;
+    width: 28px !important;
+    margin-left: 0 !important;
+}
+
+.v-toolbar .v-toolbar__content .v-btn {
+    height: 24px;
+    padding: 0 12px 0 12px;
+    min-width: 36px;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+/* content */
 .v-content {
     padding: 30px 0px 0px !important;
 }
 
-/*compression tree-view height */
-.v-treeview .v-treeview-node__root {
-    min-height: 20px;
+/* text field */
+.v-text-field input {
+    padding: 2px 2px 2px 2px;
 }
+
+.v-text-field .v-label {
+    top: 4px;
+}
+
+/* button */
+.v-btn:not(.v-btn--round).v-size--default  {
+    height: 24px;
+    padding: 1px 8px 1px 8px;
+    text-transform: none;
+}
+
+/* menu items */
+.v-menu__content .v-list .v-list-item {
+    min-height: 20px;
+    padding: 0 8px 0 8px;
+}
+
+/*tree-view */
+.v-treeview .v-treeview-node__root {
+    min-height: 14px;
+    padding: 0 4px 0 4px;
+}
+.v-treeview .v-treeview-node__level {
+    width: 16px;
+}
+
+.v-treeview .v-treeview-node__toggle,
+.v-treeview .v-treeview-node__toggle--open {
+    font-size: 24px;
+    height: 20px;
+    width: 20px;
+}
+
+.v-treeview .v-treeview-node__content {
+    height: 20px;
+    margin-left: 2px;
+}
+
+/* list view */
+.v-list .v-subheader {
+    height: auto;
+    padding: 4px 8px;
+}
+.v-list .v-item-group .v-list-item .v-list-item__icon {
+    margin: 0 4px 0 0;
+}
+
+.v-list .v-list-item {
+    min-height: auto;
+    padding: 0 4px 0 4px;
+}
+
+/* slider */
 .v-slider--horizontal {
     min-height: 20px;
 }
+
+/* radio */
+.v-radio {
+    margin-bottom: 0px !important;
+}
+
+/* select */
+
+.v-select .v-select__selection  {
+    margin: 0;
+}
+
+.v-select input {
+    padding: 0;
+}
+
+.v-select .v-input__append-inner {
+    margin-top: 0;
+}
+
+.v-select .v-icon {
+    font-size: 24px;
+    height: 20px;
+    width: 20px;
+}
+
+/* overflow button */
+.v-overflow-btn .v-select__slot {
+    height: auto;
+}
+.v-overflow-btn .v-input__slot {
+    border-style: none;
+}
+.v-overflow-btn .v-input__append-inner {
+    height: 0px;
+}
+
+/* other content */
 
 .v-input {
     margin: 0;
@@ -22,16 +139,6 @@
     margin-bottom : 0 !important;
     border-top: 0;
     border-bottom: 0;
-}
-.v-overflow-btn .v-input__slot {
-    border-style: none;
-}
-.v-overflow-btn .v-input__append-inner {
-    height: 0px;
-}
-
-.v-radio {
-    margin-bottom: 0px !important;
 }
 
 .v-messages {
@@ -44,10 +151,6 @@
 
 .v-list {
     padding: 0;
-}
-
-.v-list-item {
-    min-height: 28px !important;
 }
 
 .v-list-item__content {

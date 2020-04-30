@@ -1,28 +1,30 @@
 <template>
   <v-app>
     <v-app-bar dense app >
-      <v-app-bar-nav-icon small></v-app-bar-nav-icon>
-      <v-btn x-small class="secondary">按钮</v-btn>
-      <v-btn small class="secondary">按钮</v-btn>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-btn>按钮</v-btn>
+      <v-btn>按钮</v-btn>
     </v-app-bar>
     <v-content>
       <v-row no-gutters>
-        <v-toolbar dense>
+        <v-toolbar>
           <v-toolbar-title>Title</v-toolbar-title>
+          <v-btn>按钮</v-btn>
+          <v-btn>English</v-btn>
         </v-toolbar>
       </v-row>
       <v-row no-gutters> 
         <v-col cols="3">
-          <v-treeview transition :items="treeData"></v-treeview>
-            <v-text-field dense label="Regular"></v-text-field>
+          <v-treeview :items="treeData"></v-treeview>
+            <v-text-field label="中文regular"></v-text-field>
             <v-slider dense v-model="sliderMin" min="-100" max="100" label="Min"></v-slider>
             <v-checkbox dense v-model="checkbox" :label="`Checkbox 1: ${checkbox.toString()}`"></v-checkbox>
             <v-radio-group dense v-model="radioGroup">
               <v-radio v-for="n in 3" :key="n" :label="`Radio ${n}`" :value="n"></v-radio>
             </v-radio-group>
-            <v-switch dense v-model="switch1" :label="`Switch 1: ${switch1.toString()}`"></v-switch>
-            <v-select dense :items="selectItem" label="Standard"></v-select>
-            <v-overflow-btn dense :items="selectItem" label="Foo" ></v-overflow-btn>
+            <v-switch v-model="switch1" :label="`Switch 1: ${switch1.toString()}`"></v-switch>
+            <v-select :items="selectItem" label="Standard"></v-select>
+            <v-overflow-btn :items="selectItem" label="Foo" ></v-overflow-btn>
         </v-col>
         <v-col cols="9">
           <v-data-table dense :headers="table.header" :items="table.data" :items-per-page="5" ></v-data-table>
@@ -31,7 +33,7 @@
             <v-time-picker v-model="timePicker"></v-time-picker>
             <v-menu offset-y>
               <template v-slot:activator="{ on }">
-                <v-btn v-on="on">Dropdown</v-btn>
+                <v-btn style="font-variant: small-caps" v-on="on">Dropdown1</v-btn>
               </template>
               <v-list dense>
                 <v-list-item v-for="(item, index) in menuItems" :key="index">
@@ -40,7 +42,7 @@
               </v-list>
             </v-menu>
 
-            <v-list dense>
+            <v-list>
               <v-subheader>listHeader</v-subheader>
               <v-list-item-group v-model="listItem" >
                 <v-list-item  v-for="(item, i) in menuItems" :key="i">
@@ -86,7 +88,9 @@ export default {
         id: 1,
         name: 'Applications :',
         children: [
-          { id: 2, name: 'Calendar : app' },
+          { id: 2, name: 'Calendar : app',
+            children: [{id: 21, name: 'dde-calendar'}]
+          },
           { id: 3, name: 'Chrome : app' },
           { id: 4, name: 'Webstorm : app' },
         ],
