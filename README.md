@@ -8,6 +8,8 @@ npm install vuetify_densest --save
 
 ## Demo
 本项目本身可以直接运行，src/App.vue是一个演示界面，包含了vuetify的部分主要部件。
+screenshot:
+![image](https://github.com/renshuo/vuetify_densest/blob/master/screenshot/shot1.png)
 
 ## 使用
 在工程的main.js中或者plugin/vuetify.js中引入：
