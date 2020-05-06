@@ -1,16 +1,16 @@
 <template>
   <v-app>
-    <v-app-bar dense app >
+    <v-app-bar app >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      <v-btn>按钮</v-btn>
-      <v-btn>按钮</v-btn>
+      <v-btn>Button A</v-btn>
+      <v-btn>按钮B</v-btn>
     </v-app-bar>
     <v-content>
       <v-row no-gutters>
         <v-toolbar>
           <v-toolbar-title>Title</v-toolbar-title>
-          <v-btn>按钮</v-btn>
-          <v-btn>English</v-btn>
+          <v-btn>按钮1</v-btn>
+          <v-btn>Button 2</v-btn>
         </v-toolbar>
       </v-row>
       <v-row no-gutters> 
@@ -86,13 +86,13 @@ export default {
     treeData: [
       {
         id: 1,
-        name: 'Applications :',
+        name: '树根root :',
         children: [
-          { id: 2, name: 'Calendar : app',
-            children: [{id: 21, name: 'dde-calendar'}]
+          { id: 2, name: '子树A',
+            children: [{id: 21, name: '子子树'}]
           },
-          { id: 3, name: 'Chrome : app' },
-          { id: 4, name: 'Webstorm : app' },
+          { id: 3, name: 'child 2' },
+          { id: 4, name: 'child 3' },
         ],
       },
     ],

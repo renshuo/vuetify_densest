@@ -3,11 +3,12 @@
 }
 
 /* bars */
-
 .v-toolbar{
     height: 32px !important;
 }
-.v-toolbar__content {
+.v-app-bar .v-toolbar__content,
+.v-toolbar .v-toolbar__content
+{
     height: 30px !important;
     padding: 1px;
 }
@@ -191,8 +192,8 @@
 }
 
 .v-date-picker-table--date .v-btn, .v-date-picker-header .v-btn {
-    height: 34px;
-    width: 34px;
+    height: 30px;
+    width: 30px;
 }
 .v-date-picker-table--date th {
     padding: 1px;
